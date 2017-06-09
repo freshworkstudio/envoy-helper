@@ -13,6 +13,9 @@
             "email": "gonzalo@freshworkstudio.com"
         }
     ],
+    "bin": [
+        "envoy_helper"
+    ],
     "require": {
         "vlucas/phpdotenv": "^2.2"
     }
