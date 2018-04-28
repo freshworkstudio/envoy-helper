@@ -1,6 +1,6 @@
 {
-    "name": "meat/envoy-helper",
-    "description": "Envoy Helper for MEAT projects",
+    "name": "freshwork/envoy-helper",
+    "description": "Laravel Envoy helper",
     "license": "MIT",
     "autoload": {
         "psr-4": {
