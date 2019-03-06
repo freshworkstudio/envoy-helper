@@ -4,7 +4,7 @@
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "Meat\\EnvoyHelper\\": "src/" 
+            "Meat\\EnvoyHelper\\": "src/"
         }
     },
     "authors": [
@@ -17,6 +17,6 @@
         "envoy_helper"
     ],
     "require": {
-        "vlucas/phpdotenv": "^2.2"
+        "vlucas/phpdotenv": "^2.2|^3.3"
     }
 }

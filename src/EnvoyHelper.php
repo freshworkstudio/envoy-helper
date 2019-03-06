@@ -2,14 +2,21 @@
 
 namespace Meat\EnvoyHelper;
 
+use Dotenv\Dotenv;
+
 class EnvoyHelper
 {
     public function loadEnv()
     {
-        $dotenv = new \Dotenv\Dotenv(__DIR__ . '/../../../../');
+        try {
+            $dotenv = Dotenv::create(__DIR__ . '/../../../../');
+        } catch (\Exception $e) {
+            $dotenv = new \Dotenv\Dotenv(__DIR__ . '/../../../../');
+        }
+
         try{
             $dotenv->load();
-        } catch (Exception $exception) {
+        } catch (\Exception $exception) {
             echo "No existe archivo .env";
             exit (1);
         }
